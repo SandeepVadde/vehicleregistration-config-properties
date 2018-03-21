@@ -6,11 +6,9 @@ spring:
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     username: sa
-    password:
+    password: 
   kafka:
-    bootstrap-servers: localhost:9092
-    topic:
-      userCreated: CREATE_VEHICLE_TOPIC
-security:
-  basic:
-    enabled: false
+    bootstrap-servers:
+    - localhost:9092
+    template:
+      default-topic: CREATE_VEHICLE_TOPIC
