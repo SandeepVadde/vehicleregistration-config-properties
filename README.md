@@ -1,0 +1,1 @@
+# vehicleregistration-config-properties
